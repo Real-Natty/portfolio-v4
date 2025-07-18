@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  position: fixed;
+  background: #002;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+nav i {
+  font-size: 25px;
+}
+.hero-container {
+  background: url(/beautiful_scenery_forest_view_under_yellow_blue_cloudy_sky_hd_forest.jpg)
+    no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.hero-container .article {
+  padding-top: 10rem;
+  text-align: center;
+  color: #fff;
+}
+.article h3 {
+  font-size: 2rem;
+}
+.article article {
+  padding: 1rem;
+  color: aqua;
+}
+/* .btn {
+} */
+.btn button {
+  width: 25%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 2rem;
+  font-weight: 600;
+  background: linear-gradient(#ccc, #62ce44);
+  outline: none;
+  border: none;
+}
+
+.btn button:hover {
+  background: linear-gradient(#62ce44, #ccc);
+
+  font-weight: 700;
+}
+footer {
+  padding: 2px;
+  background: linear-gradient(#140b5c 0%, #111014 100%);
+}
+footer .name-container h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  margin: 1.5rem;
+}
+footer .courses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses .course-list h4 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.courses .course-list ul {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+.courses .course-list ul li {
+  /* border: 2px solid red; */
+  margin-bottom: 0.5rem;
+}
+.courses .course-list ul li a {
+  /* border: 2px solid white; */
+  text-decoration: none;
+  color: #ccb;
+}
+.courses .course-list ul li a:hover {
+  text-decoration: underline;
+}
+.sub-sect .subscribe {
+  /* margin: 0 10%; */
+  /* border: 2px solid red; */
+  padding: 1rem;
+}
+.sub-sect > div input[type="email"] {
+  /* border: 2px solid red; */
+  width: 25%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.sub-sect > div input[type="text"] {
+  width: 25%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+/* .sub-sect .button {
+} */
+.sub-sect .button button {
+  margin: auto;
+  width: 10%;
+}
+
+@media (max-width: 560px) {
+  .hero-container {
+    width: 100%;
+  }
+}
