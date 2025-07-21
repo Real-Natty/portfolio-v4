@@ -17,7 +17,7 @@ nav i {
   font-size: 25px;
 }
 .hero-container {
-  background: url(/images/beautiful_scenery_forest_view_under_yellow_blue_cloudy_sky_hd_forest.jpg)
+  background: url("/images/beautiful_scenery_forest_view_under_yellow_blue_cloudy_sky_hd_forest.jpg")
     no-repeat;
   height: 100vh;
   width: 100%;
