@@ -167,12 +167,16 @@ footer .button button:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
   }
+  /* footer .name-container {
+    text-align: center;
+  } */
   footer .name-container h3 {
     font-size: 15px;
   }
-  .courses .course-list {
+  .courses .course-list ul {
+    margin-left: 10px;
     width: 100%;
   }
   .hero-container .article {
@@ -180,18 +184,18 @@ footer .button button:hover {
   }
 
   .sub-sect {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     /* gap: 1rem; */
   }
 
-  .sub-sect > div input[type="email"],
-  .sub-sect > div input[type="text"] {
+  /* .sub-sect > div input[type="text"]  */
+  .sub-sect > div input[type="email"] {
     width: 100%;
   }
 
   footer .button button {
-    width: 75%;
+    width: 20%;
     display: flex;
     justify-content: center;
   }
