@@ -21,10 +21,12 @@ nav i {
     no-repeat;
   height: 100vh;
   width: 100%;
+  background-size: cover;
   background-position: center;
   object-fit: cover;
 }
 .hero-container .article {
+  width: 100%;
   padding-top: 10rem;
   text-align: center;
   color: #fff;
@@ -65,20 +67,27 @@ footer .name-container h3 {
   margin: 1.5rem;
 }
 footer .courses {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-
+.courses .course-list {
+  line-height: 1rem;
+  padding: 10px;
+}
 .courses .course-list h4 {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
 }
-.courses .course-list ul {
-  list-style: none;
+/* .courses .course-list ul {
   padding-bottom: 2rem;
-}
+} */
 .courses .course-list ul li {
+  list-style: none;
   /* border: 2px solid red; */
   margin-bottom: 0.5rem;
 }
@@ -90,33 +99,127 @@ footer .courses {
 .courses .course-list ul li a:hover {
   text-decoration: underline;
 }
-.sub-sect .subscribe {
+.sub-sect {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.sub-sect div {
   /* margin: 0 10%; */
   /* border: 2px solid red; */
   padding: 1rem;
 }
 .sub-sect > div input[type="email"] {
   /* border: 2px solid red; */
-  width: 25%;
+  width: 40%;
   padding: 0.5rem;
   border-radius: 5px;
+  margin-bottom: 10px;
   border: none;
 }
 .sub-sect > div input[type="text"] {
-  width: 25%;
+  width: 35%;
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
 }
-/* .sub-sect .button {
-} */
 .sub-sect .button button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #62ce44;
+}
+.sub-sect .button button {
+  /* border: 2px solid red; */
   margin: auto;
-  width: 10%;
+  width: 100%;
+}
+.sub-sect .button button:hover {
+  background: #62ce44;
+  color: #ccc;
+}
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(#140b5c 0%, #111014 100%);
+    width: 100%;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hero-container .article {
+    padding-top: 5rem;
+  }
+
+  .article h3 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .btn button {
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  footer .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  .courses .course-list {
+    width: 100%;
+  }
+  .hero-container .article {
+    margin-top: 2rem;
+  }
+
+  .sub-sect {
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+  }
+
+  .sub-sect > div input[type="email"],
+  .sub-sect > div input[type="text"] {
+    width: 90%;
+  }
+
+  .sub-sect .button button {
+    width: 90%;
+  }
+  .name-container h3 {
+    font-size: 10px;
+    padding: 2px;
+    align-items: start;
+  }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 480px) {
   .hero-container {
+    /* background-size: cover; */
+    height: auto;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .article h3 {
+    font-size: 1.2rem;
+  }
+
+  .article article {
+    font-size: 0.9rem;
+  }
+
+  footer .name-container h3 {
+    font-size: 20px;
+  }
+
+  footer .courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
     width: 100%;
   }
 }
