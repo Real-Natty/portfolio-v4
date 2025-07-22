@@ -109,33 +109,88 @@ footer .courses {
 .sub-sect > div input[type="email"] {
   /* border: 2px solid red; */
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 5px;
   margin-bottom: 10px;
   border: none;
 }
-.sub-sect > div input[type="text"] {
+/* .sub-sect > div input[type="text"] {
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-}
+} */
 
 .sub-sect .button button {
-  padding: 5px 10px;
+  padding: 0 10px 5px 10px;
   border-radius: 10px;
   color: #62ce44;
   margin: auto;
   width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .sub-sect .button button:hover {
   background: #62ce44;
   color: #ccc;
 }
+.about-section {
+  padding: 5px;
+  /* background: linear-gradient(#140b5c, #140b30); */
+  background: #202024;
+}
+.about-section h3 {
+  text-align: center;
+  color: aliceblue;
+  padding: 3px;
+}
+.about-section .image-article-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.image-article-container .image-container img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px;
+}
+.image-article-container .article-container h4 {
+  color: aliceblue;
+  padding: 5px 0;
+}
+.article-container p {
+  color: aliceblue;
+}
+.policy-section {
+  background-color: #202024;
+  padding: 16px 5px 5px 5px;
+}
+.policy-section .service-policy-sect h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #ccc;
+}
+.policy-section .service-policy-sect .policy-head .policy h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ccf;
+  text-align: center;
+}
+.service-policy-sect .policy-head .policy div p {
+  color: aliceblue;
+}
+.service-policy-sect .policy-head .policy div p a {
+  color: #717073;
+  text-decoration: none;
+}
+.service-policy-sect .policy-head .policy div p a:hover {
+  text-decoration: underline;
+  color: #1a06b6;
+}
+
 @media (max-width: 768px) {
   body {
     background: linear-gradient(#140b5c 0%, #111014 100%);
@@ -206,6 +261,23 @@ footer .courses {
     font-size: 10px;
     padding: 2px;
     align-items: start;
+  }
+  .about-section .image-article-container {
+    flex-wrap: wrap;
+  }
+  .image-article-container .image-container img {
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  .image-article-container .article-container h4 {
+    color: aliceblue;
+    padding: 2.5px 0;
+  }
+  .article-container p {
+    color: aliceblue;
+    padding: 0.5rem;
   }
 }
 
