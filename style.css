@@ -3,14 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background: linear-gradient(#140b5c 0%, #111014 100%);
-}
+
 nav {
   position: fixed;
   background: #002;
   width: 100%;
   padding: 5px;
+  box-shadow: 2px 2px 3px #2ecc71;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -18,6 +17,9 @@ nav {
 }
 nav i {
   font-size: 25px;
+}
+nav h2 {
+  background: #002;
 }
 .hero-container {
   background: url("beautiful_scenery_forest_view_under_yellow_blue_cloudy_sky_hd_forest.jpg")
@@ -217,6 +219,12 @@ footer .courses {
   gap: 0.5rem;
 
   background-color: #292930;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background: #292930;
 }
 .subscription .sub-container {
   border: 1px solid #ff1;
