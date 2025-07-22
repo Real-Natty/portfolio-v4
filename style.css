@@ -152,6 +152,8 @@ footer .courses {
   gap: 1rem;
 }
 .image-article-container .image-container img {
+  background: url("odogwu_natty.jpg") no-repeat;
+
   height: 10rem;
   width: 10rem;
   border-radius: 10px;
